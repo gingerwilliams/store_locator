@@ -6,17 +6,45 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Store Locator</title>
-
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  
+  <link rel="stylesheet" href="css/styles.css" >
+  <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
   <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
 </head>
 <body>
+  <div id="page" class="home">
+  	<div id="header"> 
+      <h3>Store Locator</h3>
+  	</div>
 
 	<div data-role="content">
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=Madison, WI&amp;zoom=14&amp;size=288x200&amp;markers=Madison, WI&amp;sensor=false"
+	  <div class="padding_box">
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=Duluth, GA&amp;zoom=10&amp;size=288x200&amp;markers=Duluth, GA&amp;sensor=false"
           width="288" height="200">
-   </div>
+        <!-- <img id="map" src="images/staticmap.png" width="288" height="200"> -->
+        <div id="module">
+          <ul>
+          	<li class="module_header">Header Module</li>
+          	<li class="place_box">
+          		<a id="place_name" href="details.html">First Store</a>
+          		<span class="icon_"></span>
+          	</li>
 
+          	<li class="place_box">
+          		<a id="place_name" href="details.html">Second Store</a>
+          		<span class="icon_"></span>
+          	</li>
+
+          	<li class="place_box last_place">
+          		<a id="place_name" href="details.html">Third Store</a>
+          		<span class="icon_"></span>
+          	</li>
+          </ul>
+        </div>
+      </div>
+   </div>
+   <!-- content end -->
+  </div>
 </body>
 <html>
