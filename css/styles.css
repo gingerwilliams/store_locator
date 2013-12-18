@@ -16,21 +16,30 @@ h3 {font-family: Verdana, san-serif;}
 a {color:#027ac2; font-size: 12px; text-decoration:none; cursor:pointer;}
 p {font-size:12px;}
 
-
 .padding_box {padding:10px;}
-.button {display:block; color:#ffffff; font-weight:bold; text-align: center; padding:5px 0; margin: 5px 0; border-radius:3px; background:#027ac2;}
+.column1 {float:left;}
+.column2 {float:left;}
+.clr {clear:both;}
+
+/* Buttons */
+.button {display:block; color:#027ac2; font-weight:bold; text-align: center; padding:10px 0; margin: 5px 0 0 0; background: #fafafa; }
 .btn_back {position:absolute; display: block; width:45px; height:40px; top:0px; left:0px; line-height:40px;}
 .btn_add {position:absolute; display: block; width:45px; height:40px; top:0px; right:0px; line-height:40px;}
 
-#header {height:40px; background:#222222; color:#fafafa; text-align:center;}
+.btn_bottom {border-top: 1px solid #dddddd;}
+
+/* Page */
+
+#header {height:40px; background:#999999; color:#fafafa; text-align:center;}
 #header h3 {line-height:40px;}
-
-#menu {width:100%; background:#222222; height:40px; position:absolute; bottom:0; }
+#menu {width:100%; background:#999999; height:40px; position:absolute; bottom:0; }
 #menu li {display: inline-block; width:24%; text-align: center; line-height: 40px}
-#map {}
-#module {width:100%; border:1px solid #dddddd; border-radius:2px; background: #fafafa; box-shadow:0px 2px 2px #c1c1c1}
+#footer {width:100%; color:#999999; text-align: center; padding:5px 0; font-size:10px; }
+#module {width:100%; border:1px solid #dddddd; border-radius:2px; background: #fafafa; box-shadow:0px 2px 2px #c1c1c1; margin:5px 0;}
+.module_header {padding:10px; border-bottom: 1px solid #dddddd; border-radius:2px 2px 0 0; font-size: 12px; font-weight:bold;}
 
-.module_header {padding:5px 10px; background:#027ac2; border-radius:2px 2px 0 0; color:#fafafa; font-size: 12px; font-weight:bold;}
+/* Map Search */
+#map {}
 .place_box {padding:5px 10px; border-bottom:1px solid #e6e6e6}
 .last_place {border:none;}
 
@@ -38,3 +47,8 @@ p {font-size:12px;}
 .address { text-align: center; }
 .address li {display: inline-block;}
 .address  img{width:100%; }
+
+/* Friendslist */
+.friends .friendTb {height:30px; width:30px;}
+.friends .column1 {width:50; margin:10px 5px 10px 10px;}
+.friends .column2 {margin:10px 10px 10px 5px;}
